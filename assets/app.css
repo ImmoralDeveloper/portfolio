@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Space_Mono/SpaceMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Space_Mono/SpaceMono-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Space_Mono/SpaceMono-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Space_Mono/SpaceMono-BoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Italiana/Italiana-Regular.woff2") format("woff2");
+}
 *,
 *:before,
 *:after {
@@ -352,7 +387,7 @@ body {
   background: #ffffff14;
 }
 .icon {
-  background-image: url("../../img/icons.svg");
+  background-image: url("../img/icons.svg");
   background-size: var(--iconsWidth) var(--iconsHeight);
   width: 30px;
   height: 30px;
@@ -396,7 +431,7 @@ body {
   width: 120px;
   height: 120px;
   background-size: calc(var(--iconsWidth) * 4) calc(var(--iconsHeight) * 4);
-  background-image: url("../../img/icons.svg");
+  background-image: url("../img/icons.svg");
   background-repeat: no-repeat;
   background-position: -120px -720px;
   opacity: 0.5;
@@ -826,8 +861,8 @@ div:has(#about) {
 .service__left i {
   width: 45px;
   height: 45px;
-  -webkit-mask-image: url("../../img/icons.svg");
-  mask-image: url("../../img/icons.svg");
+  -webkit-mask-image: url("../img/icons.svg");
+  mask-image: url("../img/icons.svg");
   -webkit-mask-size: calc(var(--iconsWidth) * 1.5) calc(var(--iconsHeight) * 1.5);
   mask-size: calc(var(--iconsWidth) * 1.5) calc(var(--iconsHeight) * 1.5);
   -webkit-mask-repeat: no-repeat;
