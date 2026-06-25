@@ -1,0 +1,282 @@
+{
+  "nav": {
+    "index": {
+      "en": "Index",
+      "es": "Inicio"
+    },
+    "about": {
+      "en": "About me",
+      "es": "Sobre m\u00ed"
+    },
+    "projects": {
+      "en": "Projects",
+      "es": "Proyectos"
+    },
+    "services": {
+      "en": "Services",
+      "es": "Servicios"
+    },
+    "contact": {
+      "en": "Contact",
+      "es": "Contacto"
+    },
+    "sections": {
+      "en": "Sections",
+      "es": "Secciones"
+    },
+    "followMe": {
+      "en": "Follow me",
+      "es": "S\u00edgueme"
+    },
+    "contactMe": {
+      "en": "Contact me",
+      "es": "Cont\u00e1ctame"
+    },
+    "allRightsReserved": {
+      "en": "All Rights Reserved",
+      "es": "Todos los derechos reservados"
+    },
+    "changeLanguage": {
+      "en": "Change language",
+      "es": "Cambiar idioma"
+    }
+  },
+  "hero": {
+    "greeting": {
+      "en": "Hey!,",
+      "es": "Hola,"
+    },
+    "introBeforeYears": {
+      "en": "I am Giovanni, a web developer with",
+      "es": "Soy Giovanni, desarrollador web con"
+    },
+    "introAfterYears": {
+      "en": "years of experience creating efficient and innovative",
+      "es": "a\u00f1os de experiencia creando"
+    },
+    "introStrong": {
+      "en": "digital solutions.",
+      "es": "soluciones digitales."
+    },
+    "seeProjects": {
+      "en": "See projects",
+      "es": "Ver proyectos"
+    },
+    "years": {
+      "en": "Years of Experience",
+      "es": "A\u00f1os de experiencia"
+    },
+    "role": {
+      "en": "Full-Stack Developer",
+      "es": "Desarrollador Full-Stack"
+    }
+  },
+  "about": {
+    "title": {
+      "en": "About Me",
+      "es": "Sobre m\u00ed"
+    },
+    "bodyBeforeYears": {
+      "en": "I am Giovanni, a web programmer with",
+      "es": "Soy Giovanni, programador web con"
+    },
+    "bodyAfterYears": {
+      "en": "years of experience. I specialize in transforming designs into functional, efficient interfaces focused on the user experience.",
+      "es": "a\u00f1os de experiencia. Me especializo en transformar dise\u00f1os en interfaces funcionales, eficientes y enfocadas en la experiencia de usuario."
+    }
+  },
+  "projects": {
+    "eyebrow": {
+      "en": "Recent Work",
+      "es": "Trabajos recientes"
+    },
+    "title": {
+      "en": "I am fully dedicated to creating authentic digital solutions.",
+      "es": "Me dedico por completo a crear soluciones digitales aut\u00e9nticas."
+    },
+    "webDesign": {
+      "en": "Web design",
+      "es": "Dise\u00f1o web"
+    },
+    "eswapTitle": {
+      "en": "Eswap - Online Store",
+      "es": "Eswap - Tienda online"
+    },
+    "eswapBody": {
+      "en": "Developing an online fashion store based on the Eswap UI design. I'm coding it from scratch using Laravel, turning the visual concept into a fully functional platform.",
+      "es": "Desarrollo una tienda de moda online basada en el dise\u00f1o UI de Eswap. La estoy programando desde cero con Laravel, convirtiendo el concepto visual en una plataforma completamente funcional."
+    },
+    "seeDemo": {
+      "en": "See demo",
+      "es": "Ver demo"
+    },
+    "seeDemoTitle": {
+      "en": "See Demo",
+      "es": "Ver demo"
+    },
+    "webApp": {
+      "en": "Web app",
+      "es": "Aplicaci\u00f3n web"
+    },
+    "flirtFanBody": {
+      "en": "A web app with a business model similar to OnlyFans, designed in Figma and fully developed from scratch. It showcases a seamless user experience and a robust platform for content creators.",
+      "es": "Una aplicaci\u00f3n web con un modelo de negocio similar a OnlyFans, dise\u00f1ada en Figma y desarrollada completamente desde cero. Muestra una experiencia fluida y una plataforma s\u00f3lida para creadores de contenido."
+    },
+    "businessWebsite": {
+      "en": "Business website",
+      "es": "Sitio web empresarial"
+    },
+    "dautosBody": {
+      "en": "Automotive workshop website for Dautos Car in Marbella, focused on fast booking, service pages, offers, bilingual navigation, and local trust signals.",
+      "es": "Sitio web para un taller automotriz en Marbella, enfocado en reservas r\u00e1pidas, p\u00e1ginas de servicio, ofertas, navegaci\u00f3n biling\u00fce y se\u00f1ales de confianza local."
+    },
+    "plagasCordobaTitle": {
+      "en": "Plagas Cordoba",
+      "es": "Plagas C\u00f3rdoba"
+    },
+    "plagasCordobaBody": {
+      "en": "Lead-generation website for a pest-control company in Cordoba, built around service pages, reviews, contact forms, and fast WhatsApp or phone conversion paths.",
+      "es": "Sitio web de captaci\u00f3n para una empresa de control de plagas en C\u00f3rdoba, construido alrededor de p\u00e1ginas de servicio, rese\u00f1as, formularios de contacto y accesos r\u00e1pidos por WhatsApp o tel\u00e9fono."
+    },
+    "visitWebsite": {
+      "en": "Visit website",
+      "es": "Visitar sitio"
+    }
+  },
+  "services": {
+    "eyebrow": {
+      "en": "Services I Offer",
+      "es": "Servicios que ofrezco"
+    },
+    "title": {
+      "en": "My services area",
+      "es": "Mis \u00e1reas de servicio"
+    },
+    "webDevelopment": {
+      "en": "Web Development",
+      "es": "Desarrollo web"
+    },
+    "webDevelopmentBody": {
+      "en": "Create your web applications with latest technologies.",
+      "es": "Crea tus aplicaciones web con tecnolog\u00edas modernas."
+    },
+    "frontEnd": {
+      "en": "Front-End",
+      "es": "Front-End"
+    },
+    "backEnd": {
+      "en": "Back-End",
+      "es": "Back-End"
+    },
+    "responsive": {
+      "en": "Responsive",
+      "es": "Responsive"
+    },
+    "apiDevelopment": {
+      "en": "API Development",
+      "es": "Desarrollo de APIs"
+    },
+    "apiDevelopmentBody": {
+      "en": "Secure and efficient APIs for your applications.",
+      "es": "APIs seguras y eficientes para tus aplicaciones."
+    },
+    "restfulApis": {
+      "en": "RESTful APIs",
+      "es": "APIs RESTful"
+    },
+    "graphqlApis": {
+      "en": "GraphQL APIs",
+      "es": "APIs GraphQL"
+    },
+    "soapApis": {
+      "en": "SOAP APIs",
+      "es": "APIs SOAP"
+    },
+    "ecommerceApps": {
+      "en": "E-Commerce Apps",
+      "es": "Aplicaciones e-commerce"
+    },
+    "ecommerceBody": {
+      "en": "Create your online store with the best platforms.",
+      "es": "Crea tu tienda online con las mejores plataformas."
+    }
+  },
+  "skills": {
+    "eyebrow": {
+      "en": "My Skills",
+      "es": "Mis habilidades"
+    },
+    "title": {
+      "en": "Professional Skills",
+      "es": "Habilidades profesionales"
+    },
+    "basic": {
+      "en": "Basic",
+      "es": "B\u00e1sico"
+    },
+    "advanced": {
+      "en": "Advanced",
+      "es": "Avanzado"
+    },
+    "intermediate": {
+      "en": "Intermediate",
+      "es": "Intermedio"
+    }
+  },
+  "contact": {
+    "title": {
+      "en": "Let's Talk",
+      "es": "Conversemos"
+    },
+    "body": {
+      "en": "I am available for freelance work. Connect with me via:",
+      "es": "Estoy disponible para trabajos freelance. Conversemos por:"
+    }
+  },
+  "form": {
+    "fullName": {
+      "en": "Full Name",
+      "es": "Nombre completo"
+    },
+    "phone": {
+      "en": "Phone No.",
+      "es": "Tel\u00e9fono"
+    },
+    "email": {
+      "en": "Email",
+      "es": "Email"
+    },
+    "selectService": {
+      "en": "Select Service",
+      "es": "Selecciona un servicio"
+    },
+    "other": {
+      "en": "Other",
+      "es": "Otro"
+    },
+    "message": {
+      "en": "Message",
+      "es": "Mensaje"
+    },
+    "send": {
+      "en": "Send",
+      "es": "Enviar"
+    },
+    "sending": {
+      "en": "Sending...",
+      "es": "Enviando..."
+    },
+    "sent": {
+      "en": "Message sent successfully!",
+      "es": "Mensaje enviado correctamente!"
+    },
+    "checkErrors": {
+      "en": "Please check the form for errors",
+      "es": "Revisa los campos del formulario"
+    },
+    "sendError": {
+      "en": "Error sending message. Please try again.",
+      "es": "Error al enviar el mensaje. Int\u00e9ntalo nuevamente."
+    }
+  }
+}
