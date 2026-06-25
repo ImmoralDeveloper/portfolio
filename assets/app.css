@@ -256,7 +256,7 @@ body {
   margin-bottom: 50px;
 }
 .hero__left p strong {
-  font-weight: 500;
+  font-weight: 700;
   color: var(--primary);
 }
 .hero__left button {
