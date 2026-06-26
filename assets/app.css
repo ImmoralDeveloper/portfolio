@@ -43,9 +43,9 @@
   list-style: none;
 }
 :root {
-  --black: #1f1f1f;
+  --black: #181818;
   --white: #ffffff;
-  --primary: #df4f5d;
+  --primary: #f05f6d;
   --secondary: #f2c94c;
   --primaryFont: "Space Mono", monospace;
   --secondaryFont: "Italiana", cursive;
