@@ -5,9 +5,33 @@ const LANGUAGE_CHANGE_EVENT = "portfolio:languagechange";
 const TRANSLATIONS_URL = new URL("./translations.json", import.meta.url);
 const PROGRAMMING_START_YEAR = 2021;
 const PROGRAMMING_START_MONTH = 11;
+const CONTACT_CODE_OFFSET = 9;
 
 const originalTextNodes = new WeakMap();
 const originalAttributes = new WeakMap();
+const protectedContactCache = {};
+
+const PROTECTED_CONTACT_CODES = {
+  digits: [62, 58, 66, 66, 65, 58, 64, 64, 65, 59, 63],
+  phoneDisplay: [52, 62, 58, 41, 66, 66, 65, 58, 64, 64, 65, 59, 63],
+  telegram: [114, 118, 118, 120, 123, 106, 117, 109, 110, 127, 110, 117, 120, 121, 110, 123],
+  emailDisplay: [112, 114, 120, 127, 106, 119, 119, 114, 73, 114, 118, 118, 120, 123, 106, 117, 55, 109, 110, 127],
+  emailAction: [108, 120, 119, 125, 106, 108, 125, 120, 73, 114, 118, 118, 120, 123, 106, 117, 55, 109, 110, 127],
+};
+
+const PROTECTED_CONTACT_LINKS = {
+  whatsapp: () => `https://wa.me/${getProtectedContactValue("digits")}`,
+  phone: () => `tel:+${getProtectedContactValue("digits")}`,
+  telegram: () => `https://t.me/${getProtectedContactValue("telegram")}`,
+  emailAction: () => `mailto:${getProtectedContactValue("emailAction")}`,
+  emailContact: () => `mailto:${getProtectedContactValue("emailAction")}`,
+};
+
+const PROTECTED_CONTACT_TEXT = {
+  phone: () => getProtectedContactValue("phoneDisplay"),
+  telegram: () => `@${getProtectedContactValue("telegram")}`,
+  emailDisplay: () => getProtectedContactValue("emailDisplay"),
+};
 
 const TEXT_TRANSLATION_ALIASES = [
   { text: "Let\u2019s Talk", key: "contact.title" },
@@ -89,6 +113,36 @@ function saveLanguage(language) {
   } catch {
     // Browsers can block storage in private contexts; the page still works.
   }
+}
+
+function getProtectedContactValue(key) {
+  if (protectedContactCache[key]) {
+    return protectedContactCache[key];
+  }
+
+  const codes = PROTECTED_CONTACT_CODES[key] ?? [];
+  const value = codes.map((code) => String.fromCharCode(code - CONTACT_CODE_OFFSET)).join("");
+
+  protectedContactCache[key] = value;
+  return value;
+}
+
+function initProtectedContacts() {
+  document.querySelectorAll("[data-contact-link]").forEach((element) => {
+    const buildHref = PROTECTED_CONTACT_LINKS[element.dataset.contactLink];
+
+    if (buildHref) {
+      element.href = buildHref();
+    }
+  });
+
+  document.querySelectorAll("[data-contact-text]").forEach((element) => {
+    const buildText = PROTECTED_CONTACT_TEXT[element.dataset.contactText];
+
+    if (buildText) {
+      element.textContent = buildText();
+    }
+  });
 }
 
 function getRoundedProgrammingYears(date = new Date()) {
@@ -412,6 +466,7 @@ async function initPortfolio() {
   window.portfolioTranslate = translateKey;
   initLanguageSwitcher();
   initNavigation();
+  initProtectedContacts();
   initContactForm();
   updateDynamicYears();
   updateCurrentYear();

@@ -531,11 +531,11 @@ div:has(#about) {
   bottom: -2.5vw;
   right: -4vw;
 }
-.about-signature{
-    width: 80%;
-    max-width: 360px;
-    height: auto;
-    object-fit: contain;
+.about-signature {
+  width: 80%;
+  max-width: 360px;
+  height: auto;
+  object-fit: contain;
 }
 @keyframes spin {
   0% {
@@ -1101,9 +1101,15 @@ div:has(#about) {
   font-family: var(--secondaryFont);
   font-size: calc(18px + 0.35vw);
   line-height: 1;
+  font-weight: 700;
+}
+.contact-info [data-contact-text] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .contact-info ul li:first-of-type > div a {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 .contact-info .whatsapp-icon {
   background-position: 0 -90px;
@@ -1128,13 +1134,14 @@ div:has(#about) {
 .contact-form textarea {
   width: 100%;
   padding: 15px 20px;
-  background: #ffffff1a;
+  background: rgba(255, 255, 255, 0);
   color: var(--white);
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.66;
   border-radius: 5px;
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   display: block;
   font-family: var(--primaryFont);
 }
@@ -1152,6 +1159,7 @@ div:has(#about) {
 .form-group select {
   height: 100%;
   width: 100%;
+  font-weight: 600;
   background: none;
   border: none;
   font-family: var(--primaryFont);
@@ -1588,13 +1596,11 @@ div:has(#about) {
     padding-top: 50px;
     align-items: center;
   }
-  .technologies-carousel {
-    margin-bottom: 100px;
-  }
+  .technologies-carousel,
   #about,
   #experience,
   #skills {
-    margin-bottom: calc(50px + 5vw);
+    margin-bottom: calc(85px + 7.5vw);
   }
   .projects-container {
     display: flex;
@@ -1858,6 +1864,12 @@ div:has(#about) {
   }
 }
 @media (max-width: 768px) {
+  #projects{
+    margin-bottom: 25px;
+  }
+  .contact-form-wrapper {
+    padding-top: 25px;
+  }
   .footer__bottom {
     flex-direction: column;
     gap: 25px !important;
@@ -2173,10 +2185,10 @@ div:has(#about) {
     gap: 15px;
   }
   .contact-info ul li > div a {
-    font-size: calc(13px + 1.2vw);
+    font-size: 20px;
   }
   .contact-info ul li > div p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 @media (max-width: 400px) {
