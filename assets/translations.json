@@ -103,8 +103,8 @@
       "es": "Eswap - Tienda online"
     },
     "eswapBody": {
-      "en": "Developing an online fashion store based on the Eswap UI design. I'm coding it from scratch using Laravel, turning the visual concept into a fully functional platform.",
-      "es": "Desarrollo una tienda de moda online basada en el dise\u00f1o UI de Eswap. La estoy programando desde cero con Laravel, convirtiendo el concepto visual en una plataforma completamente funcional."
+      "en": "Responsive online fashion store featuring a product catalog organized by categories (clothing, shoes, bags, hats), shopping cart system, favorites list, user account management, and an integrated blog. Frontend project built from a Figma design.",
+      "es": "Responsive online fashion store featuring a product catalog organized by categories (clothing, shoes, bags, hats), shopping cart system, favorites list, user account management, and an integrated blog. Frontend project built from a Figma design."
     },
     "seeDemo": {
       "en": "See demo",
